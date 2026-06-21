@@ -1,0 +1,25 @@
+# Secrets
+backend/.env
+frontend/.env.local
+cloudflare/config.yml
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+*.egg-info/
+dist/
+build/
+
+# DB
+backend/energy.db
+*.db
+
+# Node
+frontend/node_modules/
+frontend/.next/
+frontend/out/
+
+# OS
+.DS_Store
+Thumbs.db
