@@ -2,7 +2,7 @@ import aiosqlite
 import os
 from pathlib import Path
 
-DB_PATH = Path(__file__).parent.parent / "energy.db"
+DB_PATH = Path(os.getenv("DB_PATH", str(Path(__file__).parent.parent / "energy.db")))
 
 
 async def get_db():
